@@ -340,7 +340,65 @@ loadTour()
     
 </head>
 <body onload="onLoad()">
+    
     <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; left: 0%; top: 50%; width: 100.00%; height: 10.00%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;"><SPAN STYLE="letter-spacing:0vmin;color:#777777;font-size:1.39vmin;font-family:Arial, Helvetica, sans-serif;">Loading virtual tour. Please wait...</SPAN></DIV><p STYLE="margin:0; line-height:1.02vmin;"><BR STYLE="letter-spacing:0vmin;color:#000000;font-size:1.02vmin;font-family:Arial, Helvetica, sans-serif;"/></p></div></div></div>
     <div id="viewer"></div>
+    <section id="map-toggle" class="map-section">
+    <h2>Department Map</h2>
+    <div class="map-images">
+      <img id="groundMap" src="imgs/groundmap.jpg" class="map-img active" alt="Ground Floor Map" usemap="#groundmap" />
+      <map name="groundmap">
+        <area target="_self" alt="Lab-03" title="Lab-03" href="https://aminamalik21.github.io/Virtual-Tour/LAB-03/index.htm" coords="49,79,153,222" shape="rect">
+        <area target="_self" alt="Smart Lab" title="Smart Lab" href="https://aminamalik21.github.io/Virtual-Tour/Smart%20Lab/index.htm" coords="154,80,259,180" shape="rect">
+        <area target="_self" alt="Corridor-Lab" title="Corridor-Lab" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-Lab/index.htm" coords="120,221,186,264" shape="rect">
+        <area target="_self" alt="Corridor-left" title="Corridor-left" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-right-g/index.htm" coords="69,267,185,325" shape="rect">
+        <area target="_self" alt="Corridor-left" title="Corridor-left" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-right-g/index.htm" coords="182,290,304,323" shape="rect">
+        <area target="_self" alt="Lab-04" title="Lab-04" href="https://aminamalik21.github.io/Virtual-Tour/LAB-04/index.htm" coords="71,325,163,388" shape="rect">
+        <area target="_self" alt="MAB-160" title="MAB-160" href="https://aminamalik21.github.io/Virtual-Tour/MAB-160/index.htm" coords="163,323,256,389" shape="rect">
+        <area target="_self" alt="Ground-Stairs" title="Ground-Stairs" href="https://aminamalik21.github.io/Virtual-Tour/Stairs/index.htm" coords="355,250,304,228" shape="rect">
+        <area target="_self" alt="Ground-Stairs" title="Ground-Stairs" href="https://aminamalik21.github.io/Virtual-Tour/Stairs/index.htm" coords="327,250,354,291" shape="rect">
+        <area target="_self" alt="Department of CS" title="Department of CS" href="https://aminamalik21.github.io/Virtual-Tour/Dep-of-CS/index.htm" coords="304,289,423,359"
+          shape="rect">
+        <area target="_self" alt="Entrance" title="Entrance" href="https://aminamalik21.github.io/Virtual-Tour/Entrance/index.htm" coords="304,361,422,473" shape="rect">
+        <area target="_self" alt="Corridor-mid" title="Corridor-mid" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-mid/index.htm" coords="354,150,375,288" shape="rect">
+        <area target="_self" alt="Corridor-right" title="Corridor-right" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-left-g1/index.htm" coords="422,291,662,324" shape="rect">
+        <area target="_self" alt="Corridor-right" title="Corridor-right" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-left-g2/index.htm" coords="615,80,650,290" shape="rect">
+        <area target="_self" alt="MAB-161" title="MAB-161" href="https://aminamalik21.github.io/Virtual-Tour/MAB-161/index.htm" coords="468,324,564,390" shape="rect">
+        <area target="_self" alt="MAB-162" title="MAB-162" href="https://aminamalik21.github.io/Virtual-Tour/MAB-162/index.htm" coords="566,325,661,391" shape="rect">
+        <area target="_self" alt="MAB-163" title="MAB-163" href="https://aminamalik21.github.io/Virtual-Tour/MAB-163/index.htm" coords="529,223,615,291" shape="rect">
+        <area target="_self" alt="Meeting Room" title="Meeting Room" href="https://aminamalik21.github.io/Virtual-Tour/Meeting-room/index.htm" coords="529,152,616,223" shape="rect">
+        <area target="_self" alt="MAB-164" title="MAB-164" href="https://aminamalik21.github.io/Virtual-Tour/MAB-164/index.htm" coords="649,79,735,150" shape="rect">
+        <area target="_self" alt="MAB-165" title="MAB-165" href="https://aminamalik21.github.io/Virtual-Tour/MAB-165/index.htm" coords="528,80,614,150" shape="rect">
+      </map>
+
+      <img id="firstMap" src="" class="map-img" alt="First Floor Map" usemap="#firstmap" />
+      <map name="firstmap">
+        <area target="_self" alt="LAB-101" title="LAB-101" href="https://aminamalik21.github.io/Virtual-Tour/LAB-101/index.htm" coords="49,80,154,222" shape="rect">
+        <area target="_self" alt="LAB-102" title="LAB-102" href="https://aminamalik21.github.io/Virtual-Tour/LAB-102/index.htm" coords="155,79,260,222" shape="rect">
+        <area target="_self" alt="Corridor-Lab-f" title="Corridor-Lab-f" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-Lab-f/index.htm" coords="119,223,187,264" shape="rect">
+        <area target="_self" alt="Corridor-left" title="Corridor-left" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-right-f/index.htm" coords="70,266,186,324" shape="rect">
+        <area target="_self" alt="Corridor-left" title="Corridor-left" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-right-f/index.htm" coords="187,292,304,324" shape="rect">
+        <area target="_self" alt="IoT Lab" title="IoT Lab" href="https://aminamalik21.github.io/Virtual-Tour/IoT-Lab/index.htm" coords="71,325,163,388" shape="rect">
+        <area target="_self" alt="MAB-166" title="MAB-166" href="https://aminamalik21.github.io/Virtual-Tour/MAB-166/index.htm" coords="162,325,255,388" shape="rect">
+        <area target="_self" alt="Stairs-firstfloor" title="Stairs-firstfloor" href="https://aminamalik21.github.io/Virtual-Tour/Stairs/index.htm" coords="354,291,303,227"
+          shape="rect">
+        <area target="_self" alt="Department of IT" title="Department of IT" href="https://aminamalik21.github.io/Virtual-Tour/Dep-of-IT/index.htm" coords="303,292,424,359"
+          shape="rect">
+        <area target="_self" alt="Tarrace" title="Tarrace" href="https://aminamalik21.github.io/Virtual-Tour/Balcony/index.htm"
+          coords="304,360,423,361,422,374,419,386,410,398,403,407,389,416,374,423,360,422,343,419,328,412,318,402,308,387"
+          shape="poly">
+        <area target="_self" alt="Coridor-mid" title="Coridor-mid" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-mid-f/index.htm" coords="354,150,375,293" shape="rect">
+        <area target="_self" alt="Corridor-right" title="Corridor-right" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-left-f1/index.htm" coords="424,291,660,324" shape="rect">
+        <area target="_self" alt="Corridor-right" title="Corridor-right" href="https://aminamalik21.github.io/Virtual-Tour/Corridor-left-f2/index.htm" coords="615,80,649,291" shape="rect">
+        <area target="_self" alt="MAB-167" title="MAB-167" href="https://aminamalik21.github.io/Virtual-Tour/MAB-167/index.htm" coords="470,324,565,391" shape="rect">
+        <area target="_self" alt="MAB-168" title="MAB-168" href="https://aminamalik21.github.io/Virtual-Tour/MAB-168/index.htm" coords="565,324,661,390" shape="rect">
+        <area target="_self" alt="MAB-169" title="MAB-169" href="https://aminamalik21.github.io/Virtual-Tour/MAB-169/index.htm" coords="650,152,736,222" shape="rect">
+        <area target="_self" alt="MAB-170" title="MAB-170" href="https://aminamalik21.github.io/Virtual-Tour/MAB-170/index.htm" coords="529,151,615,223" shape="rect">
+        <area target="_self" alt="MAB-171" title="MAB-171" href="https://aminamalik21.github.io/Virtual-Tour/MAB-171/index.htm" coords="649,80,735,150" shape="rect">
+        <area target="_self" alt="MAB-172" title="MAB-172" href="https://aminamalik21.github.io/Virtual-Tour/MAB-172/index.htm" coords="529,79,614,152" shape="rect">
+      </map>
+    </div>
+    <button id="mapToggleBtn" class="map-toggle-button">Show First Floor</button>
+  </section>
 </body>
 </html>
